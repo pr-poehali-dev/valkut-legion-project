@@ -62,17 +62,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        military: {
-          dark: "#0D0F0D",
-          green: "#1A2B1A",
-          gray: "#2A2D2A",
-          gold: "#D4AF37",
-          text: "#D4C2BE",
+        norse: {
+          dark: "#171917",
+          stone: "#4A4A4A",
+          slate: "#2F2F2F",
+          earth: "#5D5751",
+          mist: "#4B5563",
+          rune: "#8B857A",
         },
       },
       fontFamily: {
-        runic: ["Cinzel", "serif"],
-        body: ["Open Sans", "sans-serif"],
+        runic: ["Cinzel", "Marcellus", "serif"],
+        body: ["Crimson Text", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -92,16 +93,16 @@ export default {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
-        "military-glow": {
-          "0%, 100%": { boxShadow: "0 0 5px rgba(212, 175, 55, 0.3)" },
-          "50%": { boxShadow: "0 0 20px rgba(212, 175, 55, 0.6)" },
+        "norse-glow": {
+          "0%, 100%": { boxShadow: "0 0 8px rgba(139, 133, 122, 0.3)" },
+          "50%": { boxShadow: "0 0 25px rgba(139, 133, 122, 0.5)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.6s ease-out",
-        "military-glow": "military-glow 2s ease-in-out infinite",
+        "norse-glow": "norse-glow 3s ease-in-out infinite",
       },
     },
   },

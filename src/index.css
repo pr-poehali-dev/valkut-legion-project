@@ -4,44 +4,44 @@
 
 @layer base {
   :root {
-    --background: 13 15 13;
-    --foreground: 212 202 190;
+    --background: 23 25 23;
+    --foreground: 180 170 155;
 
-    --card: 26 29 26;
-    --card-foreground: 212 202 190;
+    --card: 35 38 35;
+    --card-foreground: 180 170 155;
 
-    --popover: 26 29 26;
-    --popover-foreground: 212 202 190;
+    --popover: 35 38 35;
+    --popover-foreground: 180 170 155;
 
-    --primary: 212 175 55;
-    --primary-foreground: 13 15 13;
+    --primary: 139 133 122;
+    --primary-foreground: 23 25 23;
 
-    --secondary: 42 45 42;
-    --secondary-foreground: 212 202 190;
+    --secondary: 55 58 55;
+    --secondary-foreground: 180 170 155;
 
-    --muted: 42 45 42;
-    --muted-foreground: 161 161 170;
+    --muted: 55 58 55;
+    --muted-foreground: 140 140 140;
 
-    --accent: 212 175 55;
-    --accent-foreground: 13 15 13;
+    --accent: 139 133 122;
+    --accent-foreground: 23 25 23;
 
-    --destructive: 239 68 68;
+    --destructive: 160 85 85;
     --destructive-foreground: 248 250 252;
 
-    --border: 42 45 42;
-    --input: 42 45 42;
-    --ring: 212 175 55;
+    --border: 55 58 55;
+    --input: 55 58 55;
+    --ring: 139 133 122;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 13 15 13;
-    --sidebar-foreground: 212 202 190;
-    --sidebar-primary: 212 175 55;
-    --sidebar-primary-foreground: 13 15 13;
-    --sidebar-accent: 42 45 42;
-    --sidebar-accent-foreground: 212 202 190;
-    --sidebar-border: 42 45 42;
-    --sidebar-ring: 212 175 55;
+    --sidebar-background: 23 25 23;
+    --sidebar-foreground: 180 170 155;
+    --sidebar-primary: 139 133 122;
+    --sidebar-primary-foreground: 23 25 23;
+    --sidebar-accent: 55 58 55;
+    --sidebar-accent-foreground: 180 170 155;
+    --sidebar-border: 55 58 55;
+    --sidebar-ring: 139 133 122;
   }
 }
 
@@ -55,30 +55,39 @@
     background-image:
       radial-gradient(
         circle at 20% 80%,
-        rgba(26, 43, 26, 0.3) 0%,
+        rgba(47, 47, 47, 0.4) 0%,
         transparent 50%
       ),
       radial-gradient(
         circle at 80% 20%,
-        rgba(42, 45, 42, 0.3) 0%,
+        rgba(75, 85, 99, 0.3) 0%,
         transparent 50%
-      );
+      ),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23373737' fill-opacity='0.08'%3E%3Cpath d='M30 30l15-15v30zM15 15l15 15H0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 }
 
 @layer utilities {
   .font-runic {
-    font-family: "Cinzel", serif;
+    font-family: "Cinzel", "Marcellus", serif;
   }
 
   .font-body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Crimson Text", serif;
   }
 
-  .military-pattern {
+  .norse-pattern {
     background-image:
-      linear-gradient(45deg, rgba(42, 45, 42, 0.1) 25%, transparent 25%),
-      linear-gradient(-45deg, rgba(42, 45, 42, 0.1) 25%, transparent 25%);
-    background-size: 20px 20px;
+      linear-gradient(45deg, rgba(55, 58, 55, 0.15) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(55, 58, 55, 0.15) 25%, transparent 25%),
+      radial-gradient(
+        circle at 50% 50%,
+        rgba(139, 133, 122, 0.05) 0%,
+        transparent 70%
+      );
+    background-size:
+      30px 30px,
+      30px 30px,
+      100px 100px;
   }
 }

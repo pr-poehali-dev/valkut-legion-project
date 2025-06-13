@@ -22,7 +22,7 @@ const ProductModal = ({
 
   const handleBuyClick = () => {
     const message = `Здравствуйте! Хочу заказать: ${product.name} (${product.price})`;
-    const telegramUrl = `https://t.me/valkutlegion?text=${encodeURIComponent(message)}`;
+    const telegramUrl = `https://t.me/Valkut_Manager?text=${encodeURIComponent(message)}`;
     window.open(telegramUrl, "_blank");
   };
 
@@ -77,7 +77,7 @@ const ProductModal = ({
             <div className="space-y-3">
               <Button
                 size="lg"
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold animate-military-glow"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold animate-norse-glow"
                 onClick={handleBuyClick}
                 disabled={!product.inStock}
               >

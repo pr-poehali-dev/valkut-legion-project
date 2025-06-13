@@ -4,16 +4,16 @@ import Icon from "@/components/ui/icon";
 const Hero = () => {
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-military-dark via-military-green to-military-gray opacity-90" />
-      <div className="absolute inset-0 military-pattern opacity-30" />
+      <div className="absolute inset-0 bg-gradient-to-br from-norse-dark via-norse-slate to-norse-stone opacity-95" />
+      <div className="absolute inset-0 norse-pattern opacity-40" />
 
       <div className="relative z-10 container text-center space-y-8">
         <div className="space-y-4 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-runic font-bold text-primary">
-            VALKUT LEGION
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-runic font-bold text-primary tracking-wider">
+            ᚢᚨᛚᚲᚢᛏ LEGION
           </h1>
-          <p className="text-xl md:text-2xl text-military-text font-runic">
-            Военная одежда и снаряжение
+          <p className="text-xl md:text-2xl text-foreground font-runic tracking-wide">
+            Воинская одежда и снаряжение
           </p>
         </div>
 
@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold animate-military-glow"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold animate-norse-glow"
               onClick={() =>
                 document
                   .getElementById("catalog")
