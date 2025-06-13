@@ -18,6 +18,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        runic: ["Germania One", "serif"],
+        norse: ["Philosopher", "serif"],
+        readable: ["Cormorant Garamond", "serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

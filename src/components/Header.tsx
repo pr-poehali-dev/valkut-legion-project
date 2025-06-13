@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center space-x-2">
           <Icon name="Shield" className="h-8 w-8 text-primary" />
-          <h1 className="text-2xl font-runic font-bold text-primary">
+          <h1 className="text-2xl font-norse font-bold text-primary">
             VALKUT LEGION
           </h1>
         </div>
